@@ -3,14 +3,14 @@
 ## Table of Contents
 - [Movie-listing](#project-title)
 - [movie-listing demo website by using bootstrap](#description)
-- [Demo](#demo)
+- [https://kishorekumar-kp.github.io/Task-movie-listing/](#demo)
 - [cyberdudenetworks Internship](#internship)
 - [HTML, bootstrap-5](#technologies-used)
 
 ## Description
 [movie-listing demo website by using bootstrap-5. its does going movie reveiw and IMDB direct link for movie review, easy to views rating of movies]
 ## Demo
-[Include links to a live demo, screenshots, or GIFs that showcase your project in action.]
+[https://kishorekumar-kp.github.io/Task-movie-listing/]
 ## Internship
 This internship is provided by [CyberDude Networks Pvt. Ltd.](https://youtube.com/cyberdudenetworks) as part of the 6-Month Free Internship program, a skill development initiative organized to enhance participants' skills. Mentoring was provided by [Mr. Anbuselvan Rocky](https://instagram.com/anbuselvanrocky). For more information, [you can contact CyberDude Networks here](https://cyberdudenetworks.com).
 ## Technologies Used 
