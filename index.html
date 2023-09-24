@@ -1,179 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movie-Flix</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      .text-clr {
-        background: linear-gradient(
-          90deg,
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie-Flix</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <style>
+    .text-clr {
+      background: linear-gradient(90deg,
           hsla(22, 100%, 78%, 1) 0%,
-          hsla(2, 78%, 62%, 1) 100%
-        );
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-      }
-      * {
-        font-family: "Poppins";
-      }
-      .bg-img {
-        background: linear-gradient(
-            rgba(27, 23, 23, 0.8),
-            rgba(26, 21, 21, 0.8)
-          ),
-          url("assets/pjGsSE.webp");
-        background-repeat: no-repeat;
-        background-size: 1700px 700px;
-      }
-    </style>
-  </head>
-  <body >
-    <header>
-      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-        <div class="container">
-          <a class="navbar-brand fs-4 fw-semibold" href="#"
-            >Movie<span class="text-clr">FLIX</span></a
-          >
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item mx-4">
-                <a class="nav-link text-white" aria-current="page" href="#"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item mx-4">
-                <a class="nav-link text-white" href="#">About</a>
-              </li>
-              <li class="nav-item dropdown mx-4">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  text-white
-                >
-                  Movie-Genre
-                </a>
-                <ul class="dropdown-menu p-3">
-                  <li>
-                    <a class="dropdown-item text-white" href="#">Action</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item text-white" href="#">Thriller</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item text-white" href="#">Comedy</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item text-white" href="#">Romance</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main class="bg-img img-fluid" style="height: 92vh;">
-      <div>
-        <div class="card" style="width: 18rem;">
-          <img src="assets/bg-img.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
+          hsla(2, 78%, 62%, 1) 100%);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+    }
+
+    * {
+      font-family: "Poppins";
+    }
+
+    .bg-img {
+      background: linear-gradient(rgba(27, 23, 23, 0.8),
+          rgba(26, 21, 21, 0.8)),
+        url("assets/pjGsSE.webp");
+      background-repeat: no-repeat;
+      background-size: 1700px 700px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand fs-4 fw-semibold" href="#">Movie<span class="text-clr">FLIX</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-4">
+              <a class="nav-link text-white" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link text-white" href="#">Action</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link text-white" href="#">Adventure</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link text-white" href="#">Comedy</a>
+            </li>
+
           </ul>
-          <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="bg-img img-fluid" style="height: 85vh">
+    <h2 class="text-white fw-semibold p-5 ms-5 mb-5">
+      NEW MOVIES OF THE SEASON
+    </h2>
+    <container>
+      <div class="px-5 m-5">
+        <div class="row row-cols-1 row-cols-md-5 g-4">
+          <div class="col">
+            <div class="card bg-dark text-white border border-warning">
+              <img src="https://image.tmdb.org/t/p/w500/1zhBbHCsmGFkmDHSFhJsQVS0E38.jpg" class="card-img-top"
+                alt="Equalizer-3" style="height: 160px" />
+              <div class="card-body">
+                <h5 class="card-title">Equalizer-3</h5>
+                <p>Action</p>
+                <p>IMDB- 7.1⭐</p>
+                <a href="https://www.imdb.com/title/tt17024450/?ref_=chtbo_t_3" target="_blank"
+                  class="text-decoration-none text-clr">More-info</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white border border-warning">
+              <img src="https://th.bing.com/th?id=OIF.bdnVM7%2fCSMHt7oQVBs24jw&pid=ImgDet&rs=1" class="card-img-top"
+                alt="hunting in vince" style="height: 160px" />
+              <div class="card-body">
+                <h5 class="card-title">A Hunting in venice</h5>
+                <p>Drama</p>
+                <p>IMDB- 6.8⭐</p>
+                <a href="https://www.imdb.com/title/tt22687790/?ref_=chtbo_t_2" target="_blank"
+                  class="text-decoration-none text-clr">More-info</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white border border-warning">
+              <img src="https://th.bing.com/th/id/OIP.GhiZROfWxce7txVorFxXKgAAAA?pid=ImgDet&rs=1" class="card-img-top"
+                alt="barbie" style="height: 160px" />
+              <div class="card-body">
+                <h5 class="card-title">Barbie</h5>
+                <p>Fantasy</p>
+                <p>IMDB- 7.1⭐</p>
+                <a href="https://www.imdb.com/title/tt1517268/?ref_=chtbo_t_5" target="_blank"
+                  class="text-decoration-none text-clr">More-info</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white border border-warning">
+              <img src="https://i.pinimg.com/736x/dc/7a/df/dc7adf9c7d68568dbe45635cba793ba6.jpg" class="card-img-top"
+                alt="Nun-2" style="height: 160px" />
+              <div class="card-body">
+                <h5 class="card-title">The Nun-II</h5>
+                <div class="card-text">
+                  <p>Horror</p>
+                  <p>IMDB- 5.9⭐</p>
+                  <a href="https://www.imdb.com/title/tt10160976/?ref_=chtbo_t_1" target="_blank"
+                    class="text-decoration-none text-clr">More-info</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white border border-warning">
+              <img src="https://comic.systems/images/affiche/cinema/DC-BlueBeetle" class="card-img-top"
+                alt="blue-beetle" style="height: 160px" />
+              <div class="card-body">
+                <h5 class="card-title">Blue Beetle</h5>
+                <div class="card-text">
+                  <p>Adventure</p>
+                  <p>IMDB- 6.3⭐</p>
+                  <a href="https://www.imdb.com/title/tt9362930/?ref_=chtbo_t_6" target="_blank"
+                    class="text-decoration-none text-clr">More-info</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </main>
-    <!-- <main class="bg-img img-fluid" style="height: 92vh;">
-      <container class="">
-        <h2 class="text-white fw-semibold p-5 ms-5">
-          NEW MOVIES OF THE SEASON
-        </h2>
-      </container>
-      <div>
-        <div class="row">
-          <div class="col-md-3">
-            <div class="thumbnail">
-              <a href="/w3images/lights.jpg">
-                <img src="assets/bg-img.jpg" alt="Lights" style="width:100%">
-                <div class="caption">
-                  <p>Lorem ipsum...</p>
-                </div>
-              </a>
+      <hr class="bg-danger border-danger border-3 opacity-80 m-5" />
+    </container>
+  </main>
+  <section class=" action bg-dark text-white" style="height: 80vh">
+    <h2 class="text-white fw-semibold p-5 ms-5 mb-5">
+      Action Movies
+    </h2>
+    <container>
+      <div class="px-5 mx-5">
+        <div class="row row-cols-1 row-cols-md-5 g-4">
+          <div class="col">
+            <div class="card bg-dark text-white border border-warning">
+              <img src="https://3.bp.blogspot.com/-BrZ9DyX5MPg/WR808Q4AjCI/AAAAAAAADsE/uVkV0AuGjpUtLZ1RfWbtLPxLcoQIt0zEwCLcB/s1600/C_ucS3tXsAETYfX.jpg" class="card-img-top"
+                alt="Logan" style="height: 160px" />
+              <div class="card-body">
+                <h5 class="card-title">Logan</h5>
+                <p>Action</p>
+                <p>IMDB- 7.1⭐</p>
+                <a href="https://www.imdb.com/title/tt3315342/?ref_=chttp_t_20" target="_blank"
+                  class="text-decoration-none text-clr">More-info</a>
+              </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="thumbnail">
-              <a href="/w3images/nature.jpg">
-                <img src="assets/bg-img.jpg" alt="Nature" style="width:100%">
-                <div class="caption">
-                  <p>Lorem ipsum...</p>
-                </div>
-              </a>
+          <div class="col">
+            <div class="card bg-dark text-white border border-warning">
+              <img src="https://th.bing.com/th/id/OIP.w4JM9GV4esVSIz68oT5HxwHaEK?pid=ImgDet&rs=1" class="card-img-top"
+                alt="batman" style="height: 160px" />
+              <div class="card-body">
+                <h5 class="card-title">The Batman</h5>
+                <p>Action</p>
+                <p>IMDB- 6.8⭐</p>
+                <a href="https://www.imdb.com/title/tt1877830/?ref_=chtmvm_t_51" target="_blank"
+                  class="text-decoration-none text-clr">More-info</a>
+              </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="thumbnail">
-              <a href="/w3images/fjords.jpg">
-                <img src="/assets/bg-img.jpg" alt="Fjords" style="width:100%">
-                <div class="caption">
-                  <p>Lorem ipsum...</p>
-                </div>
-              </a>
+          <div class="col">
+            <div class="card bg-dark text-white border border-warning">
+              <img src="https://images.hdqwalls.com/wallpapers/poster-avengers-endgame-ni.jpg" class="card-img-top"
+                alt="endgame" style="height: 160px" />
+              <div class="card-body">
+                <h5 class="card-title">Avengers: Endgame</h5>
+                <p>Action</p>
+                <p>IMDB- 8.4⭐</p>
+                <a href="https://www.imdb.com/title/tt4154796/?ref_=fn_al_tt_1" target="_blank"
+                  class="text-decoration-none text-clr">More-info</a>
+              </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="thumbnail">
-              <a href="/w3images/fjords.jpg">
-                <img src="/assets/bg-img.jpg" alt="Fjords" style="width:100%">
-                <div class="caption">
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam repellat harum velit optio sint libero inventore esse fugiat vel odio odit quaerat possimus, voluptates nostrum.</p>
+          <div class="col">
+            <div class="card bg-dark text-white border border-warning">
+              <img src="https://i.ytimg.com/vi/nzgWLvlIdk8/maxresdefault.jpg" class="card-img-top"
+                alt="creator" style="height: 160px" />
+              <div class="card-body">
+                <h5 class="card-title">The Creator</h5>
+                <div class="card-text">
+                  <p>Action</p>
+                  <p>IMDB- 5.9⭐</p>
+                  <a href="https://www.imdb.com/title/tt11858890/?ref_=adv_li_tt" target="_blank"
+                    class="text-decoration-none text-clr">More-info</a>
                 </div>
-              </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white border border-warning">
+              <img src="https://image.tmdb.org/t/p/w500/1zhBbHCsmGFkmDHSFhJsQVS0E38.jpg" class="card-img-top"
+                alt="Equalizer-3" style="height: 160px" />
+              <div class="card-body">
+                <h5 class="card-title">Equalizer-3</h5>
+                <p>Action</p>
+                <p>IMDB- 7.1⭐</p>
+                <a href="https://www.imdb.com/title/tt17024450/?ref_=chtbo_t_3" target="_blank"
+                  class="text-decoration-none text-clr">More-info</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </main> -->
-  </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"
-  ></script>
+        <hr class="bg-danger border-danger border-3 opacity-80 m-5" />
+    </container>
+    </div>
+
+  </section>
+  <section class=" adventure bg-img text-white" style="height: 80vh">
+    <h2 class="text-white fw-semibold p-5 ms-5 mb-5">
+      Adventure Movies
+    </h2>
+    <container>
+      <div class="px-5 mx-5">
+        <div class="row row-cols-1 row-cols-md-5 g-4">
+          <div class="col">
+            <div class="card bg-dark text-white border border-warning">
+              <img src="https://th.bing.com/th/id/OIP.Zk5eFl9KMNnhZwkB4t9CwQHaEK?pid=ImgDet&rs=1" class="card-img-top"
+                alt="flash" style="height: 160px" />
+              <div class="card-body">
+                <h5 class="card-title">The Flash</h5>
+                <p>Adventure</p>
+                <p>IMDB- 6.8⭐</p>
+                <a href="https://www.imdb.com/title/tt0439572/?ref_=adv_li_tt" target="_blank"
+                  class="text-decoration-none text-clr">More-info</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white border border-warning">
+              <img src="https://th.bing.com/th/id/OIP.aZOO522RCp6OTvJqJORN4gHaEh?pid=ImgDet&rs=1" class="card-img-top"
+                alt="fast x" style="height: 160px" />
+              <div class="card-body">
+                <h5 class="card-title">Fast X</h5>
+                <p>Adventure</p>
+                <p>IMDB- 5.8⭐</p>
+                <a href="https://www.imdb.com/title/tt5433140/?ref_=adv_li_tt" target="_blank"
+                  class="text-decoration-none text-clr">More-info</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white border border-warning">
+              <img src="https://comic.systems/images/affiche/cinema/DC-BlueBeetle" class="card-img-top"
+                alt="blue-beetle" style="height: 160px" />
+              <div class="card-body">
+                <h5 class="card-title">Blue Beetle</h5>
+                <div class="card-text">
+                  <p>Adventure</p>
+                  <p>IMDB- 6.3⭐</p>
+                  <a href="https://www.imdb.com/title/tt9362930/?ref_=chtbo_t_6" target="_blank"
+                    class="text-decoration-none text-clr">More-info</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white border border-warning">
+              <img src="https://th.bing.com/th/id/OIP.7KxP-ZACfnSJDa8UoS2h7wHaDn?pid=ImgDet&rs=1" class="card-img-top"
+                alt="barbie" style="height: 160px" />
+              <div class="card-body">
+                <h5 class="card-title">Aquaman</h5>
+                <p>Adventure</p>
+                <p>IMDB- 6.8⭐</p>
+                <a href="https://www.imdb.com/title/tt1477834/?ref_=adv_li_tt" target="_blank"
+                  class="text-decoration-none text-clr">More-info</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white border border-warning">
+              <img src="https://i.pinimg.com/736x/91/9e/29/919e2969d88633e7aafe99dbe594d505.jpg" class="card-img-top"
+                alt="Mortal Kombat" style="height: 160px" />
+              <div class="card-body">
+                <h5 class="card-title">Mortal Kombat</h5>
+                <div class="card-text">
+                  <p>Adventure</p>
+                  <p>IMDB- 5.9⭐</p>
+                  <a href="https://www.imdb.com/title/tt26862060/?ref_=adv_li_tt" target="_blank"
+                    class="text-decoration-none text-clr">More-info</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+        <hr class="bg-danger border-danger border-3 opacity-80 m-5" />
+    </container>
+    </div>
+
+  </section>
+  <section class=" comedy bg-dark text-white" style="height: 80vh">
+    <h2 class="text-white fw-semibold p-5 ms-5 mb-5">
+      Comedey Movies
+    </h2>
+    <container>
+      <div class="px-5 mx-5">
+        <div class="row row-cols-1 row-cols-md-5 g-4">
+          <div class="col">
+            <div class="card bg-dark text-white border border-warning">
+              <img
+                src="https://th.bing.com/th/id/R.07faf3e3104480fee814584b5e789cc2?rik=FXr3riLOxhxCCQ&riu=http%3a%2f%2fstatic1.wikia.nocookie.net%2f__cb20140128112332%2fideas%2fimages%2f9%2f9a%2fMario_movie_poster.png&ehk=KnP94dOqEPeVnnHx5fAtE4cGr85cLxXXmyrYDSvMFDE%3d&risl=&pid=ImgRaw&r=0"
+                class="card-img-top" alt="super mario" style="height: 160px" />
+              <div class="card-body ">
+                <h5 class="card-title">Super Mario</h5>
+                <p>Comedy</p>
+                <p>IMDB- 7.1⭐</p>
+                <a href="https://www.imdb.com/title/tt6718170/?ref_=adv_li_tt" target="_blank"
+                  class="text-decoration-none text-clr">More-info</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white border border-warning">
+              <img src="https://th.bing.com/th/id/OIP.BXrz0U0tquBP7rq7VOp_6QHaFc?pid=ImgDet&rs=1" class="card-img-top"
+                alt="Strays" style="height: 160px" />
+              <div class="card-body">
+                <h5 class="card-title">Strays</h5>
+                <p>Comedy</p>
+                <p>IMDB- 6.3⭐</p>
+                <a href="https://www.imdb.com/title/tt15153532/?ref_=adv_li_tt" target="_blank"
+                  class="text-decoration-none text-clr">More-info</a>
+              </div>
+            </div>
+          </div>
+         
+          <div class="col">
+            <div class="card bg-dark text-white border border-warning">
+              <img src="https://i.ytimg.com/vi/O-tmpOjSSBQ/maxresdefault.jpg" class="card-img-top" alt="elemental"
+                style="height: 160px" />
+              <div class="card-body">
+                <h5 class="card-title">Elemental</h5>
+                <div class="card-text">
+                  <p>Comedy</p>
+                  <p>IMDB- 7.0⭐</p>
+                  <a href="https://www.imdb.com/title/tt15789038/?ref_=adv_li_tt" target="_blank"
+                    class="text-decoration-none text-clr">More-info</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white border border-warning">
+              <img src="https://th.bing.com/th/id/OIP.GhiZROfWxce7txVorFxXKgAAAA?pid=ImgDet&rs=1" class="card-img-top"
+                alt="barbie" style="height: 160px" />
+              <div class="card-body">
+                <h5 class="card-title">Barbie</h5>
+                <p>Comedy</p>
+                <p>IMDB- 7.1⭐</p>
+                <a href="https://www.imdb.com/title/tt1517268/?ref_=chtbo_t_5" target="_blank"
+                  class="text-decoration-none text-clr">More-info</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-dark text-white border border-warning">
+              <img src="https://www.animeexplained.com/wp-content/uploads/2023/06/one-piece-live-action-featured.jpg"
+                class="card-img-top" alt="one piece" style="height: 160px" />
+              <div class="card-body">
+                <h5 class="card-title">One Piece</h5>
+                <div class="card-text">
+                  <p>Comedy</p>
+                  <p>IMDB- 8.4⭐</p>
+                  <a href="https://www.imdb.com/title/tt11737520/?ref_=adv_li_tt" target="_blank"
+                    class="text-decoration-none text-clr">More-info</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </container>
+    </div>
+
+  </section>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
 </html>
