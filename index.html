@@ -32,6 +32,11 @@
       background-repeat: no-repeat;
       background-size: 1700px 700px;
     }
+    @media screen and (max-width: 480px) {
+      main >h2{
+        margin: 0;
+      }
+    }
   </style>
 </head>
 
@@ -66,11 +71,11 @@
   </header>
 
   <!-- home  -->
-  <main class="bg-img">
-    <h2 class="text-white fw-semibold p-5 ms-5 mb-5">
+  <main class="mx-5">
+    <h2 class="text-white fw-semibold ms-5 mt-5">
       NEW MOVIES OF THE SEASON
     </h2>
-      <div class="px-5 m-5">
+      <div class="m-5">
         <div class="row row-cols-1 row-cols-md-5 g-4">
           <div class="col">
             <div class="card bg-dark text-white border border-warning">
@@ -307,7 +312,7 @@
   <!-- Comedy movie -->
   <section class=" comedy text-white" id="comedy">
     <h2 class="text-white fw-semibold p-5 ms-5 mb-5">
-      Comedey Movies
+      Comedy Movies
     </h2>
       <div class="px-5 mx-5">
         <div class="row row-cols-1 row-cols-md-5 g-4">

@@ -1,31 +1,59 @@
-# Movie-listing 
-[movie-listing demo website by using bootstrap-5]
+# Project Title👋
+
+movie listing by using Bootstrap5
+
 ## Table of Contents
-- [Movie-listing](#project-title)
-- [movie-listing demo website by using bootstrap](#description)
-- [https://kishorekumar-kp.github.io/Task-movie-listing/](#demo)
-- [cyberdudenetworks Internship](#internship)
-- [HTML, bootstrap-5](#technologies-used)
+- [Project Title](#project-title)
+- [Description](#description)
+- [Demo](#demo)
+- [Internship](#internship)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+
+
 
 ## Description
-[movie-listing demo website by using bootstrap-5. its does going movie reveiw and IMDB direct link for movie review, easy to views rating of movies]
-## Demo
-[https://kishorekumar-kp.github.io/Task-movie-listing/]
-## Internship
+
+Movie listing UI features a clean, simple design. The home screen displays with a
+ navigation bar for Action ,Adventure ,Comedy. offering a user-friendly experience.
+
+## Demo🚀
+
+<a target="_blank" href="https://kishorekumar-kp.github.io/Task-movie-listing/">Demo Link</a>
+
+## Internship🥳
+
 This internship is provided by [CyberDude Networks Pvt. Ltd.](https://youtube.com/cyberdudenetworks) as part of the 6-Month Free Internship program, a skill development initiative organized to enhance participants' skills. Mentoring was provided by [Mr. Anbuselvan Rocky](https://instagram.com/anbuselvanrocky). For more information, [you can contact CyberDude Networks here](https://cyberdudenetworks.com).
-## Technologies Used 
-[HTML ,bootstrap-5]
+
+## Technologies Used
+1. HTML5
+2. Bootstrap
+
 ## Features
-- [List the key features and functionality of your project.]
-## Installation
-[Provide step-by-step instructions on how to install and set up your project locally. Include any prerequisites and dependencies.]
-## Usage
-[Explain how to use your project, including any configuration options, examples, or code snippets.]
+
+- To help you understand my skills and information better, I kindly request you to take a look at my Profile.
+
+
+
 ## Contributing
-[Explain how others can contribute to your project, such as reporting issues, submitting pull requests, and any coding guidelines.]
+
+If you want to contribute to the project, please follow the guidelines outlined in the installation. You can also contribute and edit the design to make more Perfect.
+
 ## License
-[Specify the license under which your project is distributed. For example, you can use an open-source license like MIT, GPL, or Apache 2.0. Include a link to the full license text.]
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
 ## Acknowledgments
-[If your project uses third-party code, libraries, or resources, acknowledge and give credit to the authors or projects that have been helpful.]
+
+- **Cyberdude Network Pty Limited:** Thanks to [CyberDude Networks Pvt. Ltd.](https://youtube.com/cyberdudenetworks) opportunity and guidance.
+
+- **Mentor Name:** Special thanks to [Mr. Anbuselvan Rocky](https://instagram.com/anbuselvanrocky) for their valuable mentorship.
+
+
 ---
-[Optional: Include badges, social media links, or additional information about your project or yourself.]
+Reach me to LinkedIn **https://www.linkedin.com/in/kishorekumar-kp/**
+
